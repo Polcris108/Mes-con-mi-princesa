@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOFICRIS - Nuestra Serie</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Intro estilo Netflix -->
+    <div id="netflix-intro">
+        <div class="intro-logo">SOFICRIS</div>
+    </div>
+
+    <!-- Barra de Navegación -->
+    <header class="navbar">
+        <div class="logo">SOFICRIS</div>
+        <div class="user-profile">
+            <img src="perfil.jpg" alt="Perfil SofiCris" class="profile-img">
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main-container">
+        
+        <!-- Banner / Sección Principal (Hero) -->
+        <section class="hero">
+            <div class="hero-content">
+                <span class="tag">SERIE ORIGINAL • TEMPORADAS EN EMISIÓN</span>
+                <h1>SOFICRIS: Nuestra Historia</h1>
+                <p class="hero-description">Protagonizada por los dos desde el 25 de abril. Una historia llena de amor, risas y momentos inolvidables. Episodio tras episodio, nuestro amor se hace más fuerte.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-play" onclick="reproducirTrailer()">
+                        ▶ Reproducir Trailer
+                    </button>
+                    <button class="btn btn-info" onclick="mostrarInfoSerie()">
+                        ℹ Más información
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contenedor de Temporadas (Abril a Septiembre) -->
+        <section class="rows-container">
+            
+            <!-- TEMPORADA 1: 25 ABRIL - 25 MAYO -->
+            <div class="category-row">
+                <h2>Temporada 1: 25 Abril - 25 Mayo (El Comienzo)</h2>
+                <div class="row-cards">
+                    <div class="card" onclick="abrirMedia('imgs/abril/abril1.jpeg', '26 de Abril, 2026', 'Nuestro primer selfie juntos ❤️. El inicio de algo hermoso que cambió nuestras vidas por completo.')">
+                        <img src="imgs/abril/abril1.jpeg" alt="Abril Foto 1">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                    <div class="card" onclick="abrirMedia('imgs/abril/abril2.jpeg', '29 de Abril, 2026', 'Primeras flores, qué emoción. No podías dejar de sonreír al recibirlas.')">
+                        <img src="imgs/abril/abril2.jpeg" alt="Abril Foto 2">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                    <div class="card" onclick="abrirMedia('imgs/abril/abril3.jpeg', '2 de Mayo, 2026', 'Un momento súper especial con el osito. Cada detalle a tu lado se vuelve inolvidable.')">
+                        <img src="imgs/abril/abril3.jpeg" alt="Abril Foto 3">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                    <div class="card" onclick="abrirMedia('imgs/abril/abril4.jpeg', '8 de Mayo, 2026', 'Sonrisas que lo dicen todo. Simplemente tú y yo disfrutando el presente.')">
+                        <img src="imgs/abril/abril4.jpeg" alt="Abril Foto 4">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                    <div class="card" onclick="abrirMedia('imgs/abril/abril5.jpeg', '15 de Mayo, 2026', 'Un beso tierno, te amo. La prueba de que cada segundo contigo es perfecto.')">
+                        <img src="imgs/abril/abril5.jpeg" alt="Abril Foto 5">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                    <div class="card" onclick="abrirMedia('imgs/abril/abril6.jpeg', '20 de Mayo, 2026', 'Tus ojos brillan, mi amor. Adoro mirarte y ver la felicidad que compartimos.')">
+                        <img src="imgs/abril/abril6.jpeg" alt="Abril Foto 6">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                    <div class="card" onclick="abrirMedia('imgs/abril/abril7.jpeg', '25 de Mayo, 2026', 'Más besos, más amor. Celebrando nuestro primer mes de una serie que no tiene fin.')">
+                        <img src="imgs/abril/abril7.jpeg" alt="Abril Foto 7">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TEMPORADA 2: 25 MAYO - 25 JUNIO (Tus fotos nuevas de Mayo) -->
+            <div class="category-row active-season">
+                <h2>Temporada 2: 25 Mayo - 25 Junio (Nuestros Momentos)</h2>
+                <div class="row-cards">
+                    <div class="card" onclick="abrirMedia('imgs/mayo/mayo1.jpeg', 'Mayo, 2026', 'Spa en casa y mascarillas de carbón 🖤. ¡Hasta con la carita pintada nos divertimos muchísimo juntos!')">
+                        <img src="imgs/mayo/mayo1.jpeg" alt="Mayo Foto 1">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                    <div class="card" onclick="abrirMedia('imgs/mayo/mayo2.jpeg', 'Mayo, 2026', 'Cómplices de cada locura y risa. Adoro acurrucarme así contigo y sentirte cerquita.')">
+                        <img src="imgs/mayo/mayo2.jpeg" alt="Mayo Foto 2">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                    <div class="card" onclick="abrirMedia('imgs/mayo/mayo3.jpeg', 'Mayo, 2026', 'Un detalle hermoso para la persona más linda. Ver tu carita de felicidad con este ramo lo vale todo.')">
+                        <img src="imgs/mayo/mayo3.jpeg" alt="Mayo Foto 3">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                    <div class="card" onclick="abrirMedia('imgs/mayo/mayo4.jpeg', 'Mayo, 2026', 'Una salida increíble bajo las luces de la noche. Qué bien la pasamos platicando y caminando juntos.')">
+                        <img src="imgs/mayo/mayo4.jpeg" alt="Mayo Foto 4">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                    <div class="card" onclick="abrirMedia('imgs/mayo/mayo5.jpeg', 'Mayo, 2026', 'Un beso en la mejilla que lo dice todo. Eres mi persona favorita en el mundo entero.')">
+                        <img src="imgs/mayo/mayo5.jpeg" alt="Mayo Foto 5">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                    <div class="card" onclick="abrirMedia('imgs/mayo/mayo6.jpeg', 'Mayo, 2026', 'Frente al espejo capturando nuestros momentos de complicidad. ¡Guapos los dos!')">
+                        <img src="imgs/mayo/mayo6.jpeg" alt="Mayo Foto 6">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                    <div class="card" onclick="abrirMedia('imgs/mayo/mayo7.jpeg', 'Mayo, 2026', 'Un abrazo lleno de amor y calidez. Momentos sencillos que se convierten en los más valiosos.')">
+                        <img src="imgs/mayo/mayo7.jpeg" alt="Mayo Foto 7">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                    <!-- NUEVAS FOTOS DE MAYO -->
+                    <div class="card" onclick="abrirMedia('imgs/mayo/mayo8.jpeg', 'Mayo, 2026', 'Tú y yo con esa sonrisa que me encanta. Cada instante a tu lado es pura felicidad.')">
+                        <img src="imgs/mayo/mayo8.jpeg" alt="Mayo Foto 8">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                    <div class="card" onclick="abrirMedia('imgs/mayo/mayo9.jpeg', 'Mayo, 2026', 'Un abrazo apretadito donde el tiempo se detiene. No hay lugar en el mundo en el que prefiera estar.')">
+                        <img src="imgs/mayo/mayo9.jpeg" alt="Mayo Foto 9">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                    <div class="card" onclick="abrirMedia('imgs/mayo/mayo10.jpeg', 'Mayo, 2026', 'Bajo un cielo de atardecer mágico. Abrazados viendo cómo cae la noche, un recuerdo para guardar en el corazón para siempre.')">
+                        <img src="imgs/mayo/mayo10.jpeg" alt="Mayo Foto 10">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                    <div class="card" onclick="abrirMedia('imgs/mayo/mayo11.jpeg', 'Mayo, 2026', 'Nuestras miradas cómplices y risas compartidas. Adoro pasar cada segundo contigo.')">
+                        <img src="imgs/mayo/mayo11.jpeg" alt="Mayo Foto 11">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                    <div class="card" onclick="abrirMedia('imgs/mayo/mayo12.jpeg', 'Mayo, 2026', 'Listos para darlo todo en la pista de baile. ¡Qué bien nos movemos juntos!')">
+                        <img src="imgs/mayo/mayo12.jpeg" alt="Mayo Foto 12">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                    <div class="card" onclick="abrirMedia('imgs/mayo/mayo13.jpeg', 'Mayo, 2026', 'Nuestros pasos rindiéndole culto a los buenos momentos. ¡Hasta los zapatos combinan en esta gran aventura!')">
+                        <img src="imgs/mayo/mayo13.jpeg" alt="Mayo Foto 13">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TEMPORADA 3: 25 JUNIO - 25 JULIO -->
+            <div class="category-row">
+                <h2>Temporada 3: 25 Junio - 25 Julio</h2>
+                <div class="row-cards">
+                    <div class="card" onclick="abrirMedia('imgs/junio/junio1.jpeg', 'Junio, 2026', 'Miradas que dicen todo y corazones que se reconocen. Qué bonito es estar cerquita de ti.')">
+                        <img src="imgs/junio/junio1.jpeg" alt="Junio Foto 1">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                    <div class="card" onclick="abrirMedia('imgs/junio/junio2.jpeg', 'Junio, 2026', 'Un paseo juntos disfrutando del camino. Adoro compartir cada trayecto de la vida a tu lado.')">
+                        <img src="imgs/junio/junio2.jpeg" alt="Mayo Foto 2">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                    <div class="card" onclick="abrirMedia('imgs/junio/junio3.jpeg', 'Junio, 2026', 'Haciendo muecas y divirtiéndonos como nadie. Contigo cada momento se llena de alegría y risas.')">
+                        <img src="imgs/junio/junio3.jpeg" alt="Junio Foto 3">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                    <div class="card" onclick="abrirMedia('imgs/junio/junio4.jpeg', 'Junio, 2026', 'Un besito tierno en la mejilla que alegra cualquier día. Eres lo más bonito que tengo.')">
+                        <img src="imgs/junio/junio4.jpeg" alt="Junio Foto 4">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                    <div class="card" onclick="abrirMedia('imgs/junio/junio5.jpeg', 'Junio, 2026', 'Sacando la lengüita y pasándola increíble. ¡Nuestra complicidad no tiene igual!')">
+                        <img src="imgs/junio/junio5.jpeg" alt="Junio Foto 5">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                    <div class="card" onclick="abrirMedia('imgs/junio/junio6.jpeg', 'Junio, 2026', 'Tú, yo y una cita perfecta. Guardando cada segundo en la memoria y en el corazón.')">
+                        <img src="imgs/junio/junio6.jpeg" alt="Junio Foto 6">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                    <div class="card" onclick="abrirMedia('imgs/junio/junio7.jpeg', 'Junio, 2026', 'Selfie frente al espejo mientras me abrazas. No hay abrazo en el que me sienta más segura.')">
+                        <img src="imgs/junio/junio7.jpeg" alt="Junio Foto 7">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                    <div class="card" onclick="abrirMedia('imgs/junio/junio8.jpeg', 'Junio, 2026', 'Otro besito lleno de amor. Cada muestra de cariño tuya es mi parte favorita del día.')">
+                        <img src="imgs/junio/junio8.jpeg" alt="Junio Foto 8">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                    <div class="card" onclick="abrirMedia('imgs/junio/junio9.jpeg', 'Junio, 2026', 'Paz, amor y buena compañía en casa. Disfrutando de la tranquilidad de estar juntos.')">
+                        <img src="imgs/junio/junio9.jpeg" alt="Junio Foto 9">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                    <div class="card" onclick="abrirMedia('imgs/junio/junio10.jpeg', 'Junio, 2026', 'Cerrando el día con tu sonrisa iluminándolo todo. Gracias por hacer que esta serie sea inolvidable.')">
+                        <img src="imgs/junio/junio10.jpeg" alt="Junio Foto 10">
+                        <div class="card-overlay"><span>▶ Ver Episodio</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TEMPORADA 4: 25 JULIO - 25 AGOSTO -->
+            <div class="category-row">
+                <h2>Temporada 4: 25 Julio - 25 Agosto</h2>
+                <div class="row-cards"></div>
+            </div>
+
+            <!-- TEMPORADA 5: 25 AGOSTO - 25 SEPTIEMBRE -->
+            <div class="category-row">
+                <h2>Temporada 5: 25 Agosto - 25 Septiembre</h2>
+                <div class="row-cards"></div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Modal Dinámico Estilo Netflix -->
+    <div id="mediaModal" class="modal">
+        <div class="modal-backdrop" onclick="cerrarModal()"></div>
+        <div class="modal-container">
+            <span class="close-btn" onclick="cerrarModal()">&times;</span>
+            <div class="modal-body">
+                <div class="modal-media-wrapper">
+                    <img id="modalImg" src="" alt="Foto de la serie">
+                </div>
+                <div class="modal-info">
+                    <span id="modalBadge" class="modal-badge">EPISODIO OFICIAL</span>
+                    <h3 id="modalDate">Fecha de la fotografía</h3>
+                    <p id="modalDescription">Descripción de la foto aparecerá aquí...</p>
+                    <div class="modal-actions">
+                        <span class="love-react">❤️ Te amo muchísimo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Hecho con todo mi amor para SOFICRIS &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
